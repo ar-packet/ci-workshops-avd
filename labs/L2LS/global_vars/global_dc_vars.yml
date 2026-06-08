@@ -56,6 +56,9 @@ ntp_settings:
     - name: 192.168.0.1
       iburst: true
 
+# Timezone
+timezone: "Australia/Brisbane"
+
 # DNS settings
 dns_settings:
   domain: atd.lab
