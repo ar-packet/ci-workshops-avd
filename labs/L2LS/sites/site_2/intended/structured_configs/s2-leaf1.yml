@@ -3,6 +3,12 @@ aaa_authorization:
     default: local
 aaa_root:
   disabled: true
+banners:
+  motd: 'What is this funky deal
+
+    And does it cross lines?
+
+    EOF'
 clock:
   timezone: Australia/Brisbane
 config_end: true
@@ -90,6 +96,15 @@ local_users:
   sha512_password: $6$12d178df28bcb649$a1as8Vv4eM8nnVKpSgf9C6NnUPt.VySUdQES7Pdo/rFI/ECk.pBNJXM8iR.EjYH7Sm4wBmokmgBNm4TwCRWmb.
   ssh_key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCjiX/B8FlmfJhzAMzuQ+tIVmly3ZFl2mf4qkShF+OXDMSpEf03sQ2JOSqChvxKLfZscsYzMlO+m3oFffM09mu7sY+CcBqxPLK/Vi+IJsRD/VFf17ijpVCcUQ9IUIaW4BakUBgkfghD/orsFY9896qui9pSJCrbj/cS4O3+pq3BgIYCeyKcveaNBDoN8uQrxhGfjq54UvSJEjIutFcpNgHN8k44kNjmguKqFDbNZ0e1v6SIOhaA+e4ifpzr4gnWnZxgF4gx+bTbW5njtiZdm5zDDwAPDpqmXws4H3UAZOcV/mD/UUOL2UMGNgk/mJSDkW8m4ZQAGG2AyR+OAAxGvEhB
     arista@automation-wkshp-practice-1-03833209-eos
+logging:
+  vrfs:
+  - name: default
+    source_interface: Management0
+    hosts:
+    - name: 10.200.0.108
+      protocol: udp
+    - name: 10.200.1.108
+      protocol: udp
 management_api_http:
   enable_https: true
   enable_vrfs:
