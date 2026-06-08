@@ -3,6 +3,12 @@ aaa_authorization:
     default: local
 aaa_root:
   disabled: true
+banners:
+  motd: 'What is this funky deal
+
+    And does it cross lines?
+
+    EOF'
 clock:
   timezone: Australia/Brisbane
 config_end: true
